@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jedidiah | Developer</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- tsParticles -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PARTICLES BACKGROUND -->
+<div id="particles"></div>
+
+<!-- FLOATING SOCIAL SIDEBAR -->
+<div class="social-sidebar">
+  <a href="https://github.com/chukwuemekejedidiah-dev" target="_blank" class="social-link" data-tooltip="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://vercel.com/chukwuemeke-jedidiahs-projects" target="_blank" class="social-link" data-tooltip="Vercel">
+    <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" class="vercel-icon">
+  </a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Jedidiah</h2>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span>Jedidiah</span></h1>
+    <h2 class="typing"></h2>
+    <p>I create modern web experiences and software solutions.</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToProjects()">View Projects</button>
+      <button class="secondary" onclick="scrollToContact()">Contact</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="profile.jpg" alt="Jedidiah Profile Picture">
+    </div>
+    <div class="about-text">
+      <p>Hello! I’m Jedidiah, a passionate developer focused on learning and building impactful software and websites. My expertise spans <strong>HTML, CSS, JavaScript, Python, Java, and C</strong>. I enjoy creating responsive, interactive, and modern digital experiences while continuously learning new technologies.</p>
+      <p>I’m always excited to work on projects that challenge me and help me grow as a developer. When I’m not coding, I explore tech trends and open-source contributions to stay sharp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+    <div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+    <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+    <div class="skill"><i class="fa-brands fa-java"></i><p>Java</p></div>
+    <div class="skill"><i class="fa-solid fa-c"></i><p>C</p></div>
+  </div>
+  <div class="skill-bars">
+    <div class="skill-bar"><p>HTML</p><div class="bar"><div class="progress html"></div></div></div>
+    <div class="skill-bar"><p>CSS</p><div class="bar"><div class="progress css"></div></div></div>
+    <div class="skill-bar"><p>JavaScript</p><div class="bar"><div class="progress js"></div></div></div>
+    <div class="skill-bar"><p>Python</p><div class="bar"><div class="progress python"></div></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+      <div class="project-image"><img src="project1.png" alt="Portfolio Project"></div>
+      <h3>Portfolio Website</h3>
+      <p>Modern portfolio website using HTML, CSS, and JavaScript.</p>
+      <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+    </div>
+    <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+      <div class="project-image"><img src="project2.png" alt="Python Calculator"></div>
+      <h3>Python Calculator</h3>
+      <p>Command-line calculator built with Python.</p>
+      <div class="project-links"><a href="#">Demo</a><a href="#">GitHub</a></div>
+    </div>
+    <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+      <div class="project-image"><img src="project3.png" alt="SQL Database"></div>
+      <h3>SQL Database</h3>
+      <p>Database system using SQL queries.</p>
+      <div class="project-links"><a href="#">Demo</a><a href="#">GitHub</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Jedidiah</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
